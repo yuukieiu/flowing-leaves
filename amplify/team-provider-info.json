@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-flowingleaves-dev-163656-authRole",
+      "UnauthRoleArn": "arn:aws:iam::590332394460:role/amplify-flowingleaves-dev-163656-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::590332394460:role/amplify-flowingleaves-dev-163656-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-flowingleaves-dev-163656-deployment",
+      "UnauthRoleName": "amplify-flowingleaves-dev-163656-unauthRole",
+      "StackName": "amplify-flowingleaves-dev-163656",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:590332394460:stack/amplify-flowingleaves-dev-163656/f5b8e520-d9a1-11ec-bfc2-0a57d6d253b1",
+      "AmplifyAppId": "dje350kt73zrz"
+    }
+  }
+}
