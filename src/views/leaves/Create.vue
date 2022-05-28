@@ -7,7 +7,7 @@
       src='../../../public/img/leaf1.png'
       >
       <v-row align-content="center" style="height: 300px">
-        <v-col align="center">{{ form.text }}</v-col>
+        <v-col align="center">{{ form.message }}</v-col>
       </v-row>
     </v-img>
     <v-form
