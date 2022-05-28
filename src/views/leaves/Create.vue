@@ -16,7 +16,7 @@
         lazy-validation
         @submit.prevent="submitCreate">
         <v-text-field
-          v-model="form.text"
+          v-model="form.message"
           :counter="300"
           :rules="nameRules"
           label="思うこと…"
@@ -43,7 +43,7 @@ export default {
   data () {
     return {
       form: {
-        text: ''
+        message: ''
       },
       valid: true,
       nameRules: [
