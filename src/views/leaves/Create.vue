@@ -21,6 +21,7 @@
           :rules="nameRules"
           label="思うこと…"
           required
+          clearable
         ></v-text-field>
         <v-btn
           :disabled="!valid"
@@ -61,6 +62,7 @@ export default {
         .then((result) => {
           console.log(result)
           this.$router.push({ name: 'LeafCreate' })
+          this.form.message = ''
         })
         .catch((error) => {
           console.log(error)
