@@ -60,15 +60,15 @@ export default {
           query: createLeaf,
           variables: { input: this.form }
         })
-        .then((result) => {
-          console.log(result)
-          this.$router.push({ name: 'LeafCreate' })
-          this.form.message = ''
-          this.$refs.form.resetValidation()
-        })
-        .catch((error) => {
-          console.log(error)
-        })
+      .then((result) => {
+        console.log(result)
+        this.$router.push({ name: 'LeafCreate' })
+        this.form.message = ''
+        this.$refs.form.resetValidation()
+      })
+      .catch((error) => {
+        console.log(error)
+      })
       }
     }
   }
