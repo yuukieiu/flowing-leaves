@@ -55,18 +55,21 @@ export default {
   },
   methods: {
     async submitCreate () {
-      await API.graphql({
-        query: createLeaf,
-        variables: { input: this.form }
-      })
+      if (this.$refs.form.validate()) {
+        await API.graphql({
+          query: createLeaf,
+          variables: { input: this.form }
+        })
         .then((result) => {
           console.log(result)
           this.$router.push({ name: 'LeafCreate' })
           this.form.message = ''
+          this.$refs.form.resetValidation()
         })
         .catch((error) => {
           console.log(error)
         })
+      }
     }
   }
 }
