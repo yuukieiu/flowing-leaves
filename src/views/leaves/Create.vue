@@ -1,5 +1,8 @@
 <template>
-  <v-container>
+  <v-container class="video-wrap">
+    <video autoplay muted loop playsinline>
+      <source src='../../../public/video/River.mp4' />
+    </video>
     <h1>葉っぱを流す</h1>
     <v-img
       max-height="300"
@@ -34,6 +37,32 @@
       </v-form>
   </v-container>
 </template>
+
+<style scoped lang="scss">
+.video-wrap {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  max-height: 700px;
+  object-fit: cover;
+}
+
+.video-wrap {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+</style>
 
 <script>
 import { API } from 'aws-amplify'
