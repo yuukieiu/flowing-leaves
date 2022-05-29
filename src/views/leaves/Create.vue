@@ -1,8 +1,6 @@
 <template>
+<video-bg :sources="['../../../public/video/River.mp4']">
   <v-container class="video-wrap">
-    <video autoplay muted loop playsinline>
-      <source src='../../../public/video/River.mp4'  type='video/mp4'/>
-    </video>
     <h1>葉っぱを流す</h1>
     <v-img
       max-height="300"
@@ -36,6 +34,7 @@
         </v-btn>
       </v-form>
   </v-container>
+</video-bg>
 </template>
 
 <style scoped lang="scss">

@@ -9,12 +9,14 @@ import {
   applyPolyfills,
   defineCustomElements
 } from '@aws-amplify/ui-components/loader'
+import VideoBg from 'vue-videobg'
 Amplify.configure(AwsExports)
 applyPolyfills().then(() => {
   defineCustomElements(window)
 })
 
 Vue.config.productionTip = false
+Vue.component('video-bg', VideoBg)
 
 new Vue({
   router,
