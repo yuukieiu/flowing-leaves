@@ -1,7 +1,7 @@
 <template>
   <v-container class="video-wrap">
     <video autoplay muted loop playsinline>
-      <source src='../../../public/video/River.mp4' />
+      <source src='~/assets/video/River.mp4' />
     </video>
     <h1>葉っぱを流す</h1>
     <v-img
