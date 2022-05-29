@@ -1,5 +1,5 @@
 <template>
-<video-bg :sources="['../../../public/video/River.mp4']">
+<video-bg :sources="['https://flowingleaves.s3.ap-northeast-1.amazonaws.com/video/River.mp4']">
   <v-container class="video-wrap">
     <h1>葉っぱを流す</h1>
     <v-img
